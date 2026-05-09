@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 54 24% 97%;
+  --foreground: 28 13% 14%;
+  --muted: 40 18% 90%;
+  --muted-foreground: 30 8% 42%;
+  --border: 35 15% 82%;
+  --primary: 169 72% 27%;
+  --primary-foreground: 0 0% 100%;
+  --success: 150 63% 32%;
+  --warning: 39 96% 45%;
+  --danger: 354 72% 48%;
+}
+
+.dark {
+  --background: 30 8% 11%;
+  --foreground: 46 22% 93%;
+  --muted: 28 8% 19%;
+  --muted-foreground: 39 9% 68%;
+  --border: 27 8% 27%;
+  --primary: 169 58% 45%;
+  --primary-foreground: 0 0% 8%;
+  --success: 151 54% 48%;
+  --warning: 39 91% 55%;
+  --danger: 354 75% 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1080px;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
