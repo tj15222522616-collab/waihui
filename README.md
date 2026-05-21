@@ -146,6 +146,8 @@ npm run dev:renderer
 
 客户交付版建议在设置页启用“云端 Research API”，把搜索、抓取和字段抽取放到你的后端服务。桌面端只接收候选资料、字段证据、资料完整度和平均置信度。接口约定见 `docs/research-api-contract.md`，交付清单见 `docs/customer-delivery-checklist.md`。
 
+项目重设计说明见 `docs/project-redesign.md`。当前方向是低成本国内内测版：本地优先、证据驱动、资料完整度优先、云端 Research API 可选。
+
 为了 Windows 落地更稳定，联网搜索支持按环境变量优先使用正式搜索服务，均未配置时才退回 DuckDuckGo HTML 兜底：
 
 ```bash
