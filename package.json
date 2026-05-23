@@ -17,7 +17,7 @@
     "electron:check": "electron --version",
     "electron:install": "cross-env ELECTRON_MIRROR=https://cdn.npmmirror.com/binaries/electron/ node node_modules/electron/install.js",
     "rebuild:native": "electron-builder install-app-deps",
-    "dist:win": "npm run build && electron-builder --win nsis --x64"
+    "dist:win": "npm run build && electron-builder --win nsis --x64 --publish never"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
